@@ -218,7 +218,7 @@ def fetch_page(args):
     keyword, page, filters = args
     time.sleep(random.uniform(1.5, 4.0))
     kw  = keyword.replace(" ", "+")
-    url = f"https://www.daraz.com.bd/catalog/?ajax=true&page={page}&q={kw}"
+    url = f"https://www.daraz.com.bd/catalog/?&page={page}&q={kw}"
     headers = {
         'Referer': 'https://www.daraz.com.bd/',
         'User-Agent': random.choice(USER_AGENTS),
